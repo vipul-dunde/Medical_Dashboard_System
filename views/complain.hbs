@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Complain</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">HOSPITAL MANAGEMENT SYSTEM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/complain">Complain <span class="sr-only">(current)</span></a>
+            </li>
+                            <li class="nav-item active">
+                    <a class="nav-link" href="/dashboard">Dashboard<span class="sr-only">(current)</span></a>
+                </li>
+
+        </ul>
+        <ul class="navbar-nav mr-automy-2 my-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="/login">login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/register">Register</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+     {{!-- <h1>HOSPITAL MANAGEMENT SYSTEM</h1>
+    <P></P> --}}
+    <div class="container">
+        <h3>  COMPLAIN PORTAL PAGE </h3>
+            <form action="/auth/complain" method="POST">
+                
+                    <div class="form-group row">
+                        <label for="cname" class="col-12 col-sm-4">Name of complainer</label>
+                        <input class="form-control col-12 col-sm-6" type="text" name="cname" id="cname">
+                        <small></small> 
+                    </div>
+                
+                    <div class="form-group row">
+                        <label class="col-12 col-sm-4" for="type">Complain Against</label>
+                        <select class="col-12 col-sm-4" name="type" >
+                                <option>Staff</option>
+                                <option>Treatment Quality</option>
+                                <option>Facilities</option>
+                                <option>Management</option>
+                                <option>Other</option>
+                        </select>
+                    </div>
+                
+                    <div class="form-group row">
+                        <label class="col-12 col-sm-4" for="desc">Description</label>
+                        <textarea class="form-control col-12 col-sm-6" type="text" cols="13" rows="5" name="desc" id="desc"></textarea>
+                    </div>
+                
+                    <button class="btn btn-primary" type="submit">submit</button>
+                
+                    {{#if message}}
+            {{!-- if message from auth_controll --}}
+                    <h4 >ALERT:{{message}}  </h4>
+                    {{/if}}
+            </form>
+    </div>
+</body>
+</html>

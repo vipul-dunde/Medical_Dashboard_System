@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">HOSPITAL MANAGEMENT SYSTEM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/complain">Complain</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav mr-automy-2 my-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="/login">login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/register">Register</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="container">
+    <h1>LOGIN PAGE</h1>
+    <form action="/auth/login" method="POST">
+    {{!-- sending values to "auth_controll/login"  using method POST--}}
+         {{!-- <div>
+             <label for="name" >name</label>
+            <input type="text" name="name" id="name">
+            <small></small>
+        </div> --}}
+         <div class="form-group row" >
+             <label class="col-12 col-sm-4" for="email">email</label>
+            <input class="form-control col-12 col-sm-6" type="email" name="email" id="email" placeholder="email">
+            <small></small> 
+        </div>
+         <div class="form-group row">
+             <label class="col-12 col-sm-4" for="password">password</label>
+            <input class="form-control col-12 col-sm-6" type="password" name="password" id="password" placeholder="password">
+            <small></small>
+        </div>
+       
+       <button class="btn btn-primary" type="submit">submit</button>
+       
+       {{#if message}}
+{{!-- if message from auth_controll --}}
+        <h4 >ALERT : {{message}}  </h4>
+        {{/if}}
+    </form>
+    </div>
+    
+
+</body>
+</html>

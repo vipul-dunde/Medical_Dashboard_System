@@ -1,0 +1,32 @@
+{
+    "compile-hero.disable-compile-files-on-did-save-code": false,
+    "sqltools.connections": [
+        {
+            "connectionTimeout": 60,
+            "database": "test",
+            "driver": "MySQL",
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "name": "MySQL",
+            "password": "897576",
+            "port": 3306,
+            "previewLimit": 50,
+            "server": "localhost",
+            "username": "root"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "nodejsmysqlapp",
+            "database": "localhost",
+            "username": "root",
+            "password": "vipul123"
+        }
+    ]
+}

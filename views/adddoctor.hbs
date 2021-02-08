@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Add Employee</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Medical Dashboard SYSTEM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/adddoctor">Add Employee<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/complain">Complain</a>
+                </li>
+                                <li class="nav-item active">
+                    <a class="nav-link" href="/dashboard">Dashboard<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-automy-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h3> ADD EMPLOYEE TO HOSPITAL </h3>
+        <br>
+        <div>
+            <form action="/auth/adddoctor" method="POST">
+                              <div class="form-group row">
+                    <label class="col-12 col-sm-4" for="selemp">SELECT EMPLOYEE</label>
+                    <input class="form-control col-12 col-sm-6" type="text" name="selemp" id="selemp" placeholder="Write here..">
+                    <small class="col-12 col-sm-4"></small>
+                    <small class="form-text text-muted col-sm-6">Choose from : Doctor, Nurse, Staff</small>
+                </div>
+                <div class="form-group row">
+                    <label class="col-12 col-sm-4" for="fname">FIRST NAME</label>
+                    <input class="form-control col-12 col-sm-6" type="text" name="fname" id="fname" placeholder="Type your first name">
+                </div>
+                <div class="form-group row">
+                    <label class="col-12 col-sm-4" for="lname">LAST NAME</label>
+                    <input class="form-control col-12 col-sm-6" type="text" name="lname" id="lname" placeholder="Type your last name">
+                </div>
+                <div class="form-group row">
+                    <label class="col-12 col-sm-4" for="DEG">EDUCATION</label>
+                    <input class="form-control col-12 col-sm-6" type="text" name="deg" id="deg" placeholder="Education...">
+                </div>
+                <div class="form-group row">
+                    <label class="col-12 col-sm-4" for="spe">SPECIALIZATION</label>
+                    <input class="form-control col-12 col-sm-6" type="text" name="spe" id="spe" placeholder="Specialization...">
+                </div>
+                <div class="form-group row">
+                    <label class="col-12 col-sm-4" for="expr">EXPERIENCE</label>
+                    <input class="form-control col-12 col-sm-6" type="number" name="expr" id="expr" placeholder="Experience in Years">
+                </div>
+                <div class="form-group row">
+                    <label class="col-12 col-sm-4" for="descr">DESCRIPTION</label>
+                    <input class="form-control col-12 col-sm-6" type="text" name="descr" id="descr" placeholder="about experience and carrer">
+                </div>
+                <button class="btn btn-primary float-left" type="submit">submit</button>
+
+                {{#if message}}
+                {{!-- if message from auth_controll --}}
+                    <h4 > {{message}}  </h4>
+                {{/if}}
+            </form>
+        </div>
+        
+    </div>
+
+
+
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/popper.min.js"></script>
+    <script src="/javascript/bootstrap.min.js"></script>
+</body>
+</html>

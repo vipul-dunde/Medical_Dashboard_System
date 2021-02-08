@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6a436a8b-0774-4417-984b-f4abd8cc977a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1hRcGpL1htZgnFJTyB0DKTsTRT1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Webstorm\nodejsapp\expressapp" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a436a8b-0774-4417-984b-f4abd8cc977a" name="Default Changelist" comment="" />
+      <created>1599977251721</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1599977251721</updated>
+      <workItem from="1599977252781" duration="7048000" />
+      <workItem from="1600057872149" duration="3579000" />
+      <workItem from="1600069618237" duration="682000" />
+      <workItem from="1600072776294" duration="5721000" />
+      <workItem from="1600092568615" duration="3019000" />
+      <workItem from="1600104803767" duration="448000" />
+      <workItem from="1600105282981" duration="1206000" />
+      <workItem from="1600429604563" duration="1750000" />
+      <workItem from="1600431656494" duration="6684000" />
+      <workItem from="1600486236592" duration="1418000" />
+      <workItem from="1600489784401" duration="12000" />
+      <workItem from="1600514474021" duration="5499000" />
+      <workItem from="1600684480074" duration="661000" />
+      <workItem from="1600849549658" duration="1587000" />
+      <workItem from="1601360390999" duration="28000" />
+      <workItem from="1612803559098" duration="458000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="277" y="57" key="SettingsEditor" timestamp="1612803736990">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1612803736990" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1612803652540">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1612803652540" />
+  </component>
+</project>

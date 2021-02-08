@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Delete</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">Medical Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="/complain">Complain <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                    <a class="nav-link" href="/dashboard">Dashboard<span class="sr-only">(current)</span></a>
+                </li>
+            
+        </ul>
+        <ul class="navbar-nav mr-automy-2 my-lg-0">
+            <li class="nav-item">
+                <a class="nav-link" href="/login">login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/register">Register</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+    <div class="container">
+        <h3> DELETE FEATURE </h3>
+        <form action="/auth/deletepage" method="POST">
+
+            <div class="form-group row">
+                <div class="col-12 col-md-3">
+                    <p><a href="/users">Check Users List</a></p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <label  for="iduser">Delete User</label>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <input class="form-control col-6" type="email" name="iduser" id="iduser" placeholder="ENTER EMAIL...">
+                        <button class="btn btn-danger float-right ml-2" type="submit">Submit</button>
+                        <p>  {{#if data1}}
+                        <h4 >alert:{{data1}}  </h4>
+                        {{/if}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+            
+            <div class="form-group row">
+                <div class="col-12 col-md-3">
+                    <p><a href="/showdoctor">Check Doctor List</a></p>
+                </div>
+                <div class="col-12 col-md-3">
+                    <label  for="iddoct">Delete Doctor</label>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="row">
+                        <input class="form-control col-6" type="number" name="iddoct" id="iddoct" placeholder="ENTER ID....">
+                        <button class="btn btn-danger float-right ml-2" type="submit">Submit</button>
+                        <p>  {{#if data2}}
+                        <h4 >alert:{{data2}}  </h4>
+                        {{/if}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+                <div class="form-group row">
+                    <div class="col-12 col-md-3">
+                        <p><a href="/shownurse">Check Nurse List</a></p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <label   for="idnur">Delete Nurse</label>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row">
+                            <input class="form-control col-6" type="number" name="idnur" id="idnur" placeholder="ENTER ID....">
+                            <button class="btn btn-danger float-right ml-2" type="submit">Submit</button>
+                            <p>  
+                                {{#if data4}}
+                                <h4 >alert:{{data4}}  </h4>
+                                {{/if}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            <hr>
+                <div class="form-group row">
+                    <div class="col-12 col-md-3">
+                        <p><a href="/showstaff">Check Staff List</a></p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <label for="idsta">Delete Staff</label>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row">
+                            <input class="form-control col-6" type="number" name="idsta" id="idsta" placeholder="ENTER ID....">
+                            <button class="btn btn-danger float-right ml-2" type="submit">Submit</button>
+                            <p>  
+                                {{#if data5}}
+                                <h4 >alert:{{data5}}  </h4>
+                                {{/if}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            <hr>
+                <div class="form-group row">
+                    <div class="col-12 col-md-3">
+                        <p><a href="/showpatient">Check Patient List</a></p>
+                    </div>
+                    <div class="col-12 col-md-3">
+                        <label for="idpat">Delete Patient</label>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="row">
+                            <input class="form-control col-6" type="number" name="idpat" id="idpat" placeholder="ENTER ID....">
+                            <button class="btn btn-danger float-right ml-2" type="submit">Submit</button>
+                            <p>  
+                                {{#if data3}}
+                                <h4 >alert:{{data3}}  </h4>
+                                {{/if}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+
+    
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/popper.min.js"></script>
+    <script src="/javascript/bootstrap.min.js"></script>
+</body>
+</html>

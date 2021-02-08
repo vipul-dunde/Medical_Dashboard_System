@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Add Employee</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">Medical Dashboard SYSTEM</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/adddoctor">Add Employee<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/complain">Complain</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav mr-automy-2 my-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/register">Register</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h3> CHECK SALARY OF EMPLOYEE </h3>
+        <br>
+        <div>
+            <form action="/auth/salary" method="POST">
+                              <div class="form-group row">
+                    <label class="col-12 col-sm-4" for="iddoct">SELECT DOCTOR'S ID</label>
+                    <input class="form-control col-12 col-sm-6" type="text" name="iddoct" id="iddoct" placeholder="WRITE ID">
+                    <small class="col-12 col-sm-4"></small>            
+                </div>
+                <div class="form-group row">
+                    <label class="col-12 col-sm-4" for="idnur">SELECT ID OF NURSE</label>
+                    <input class="form-control col-12 col-sm-6" type="text" name="idnur" id="idnur" placeholder="Type your first name">
+                </div>
+                <div class="form-group row">
+                    <label class="col-12 col-sm-4" for="idsta">SELECT ID OF STAFF</label>
+                    <input class="form-control col-12 col-sm-6" type="text" name="idsta" id="idsta" placeholder="Type your last name">
+                </div>
+                <button class="btn btn-primary float-left" type="submit">submit</button>
+
+                {{#if message}}
+                {{!-- if message from auth_controll --}}
+                    <h4 > {{message}}  </h4>
+                {{/if}}
+            </form>
+        </div>
+        
+    </div>
+
+
+
+    <script src="/javascript/jquery.min.js"></script>
+    <script src="/javascript/popper.min.js"></script>
+    <script src="/javascript/bootstrap.min.js"></script>
+</body>
+</html>
